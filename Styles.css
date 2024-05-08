@@ -55,10 +55,11 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo durante 0.3 segundos */
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #555; /* Color de fondo al pasar el cursor sobre el botón */
 }
 
 footer {
@@ -66,4 +67,21 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+}
+
+/* Media queries para hacer la página responsive */
+
+/* Estilos para pantallas pequeñas (hasta 600px de ancho) */
+@media (max-width: 600px) {
+    /* Aquí se pueden agregar estilos específicos para pantallas pequeñas */
+}
+
+/* Estilos para pantallas medianas (de 601px a 900px de ancho) */
+@media (min-width: 601px) and (max-width: 900px) {
+    /* Aquí se pueden agregar estilos específicos para pantallas medianas */
+}
+
+/* Estilos para pantallas grandes (más de 900px de ancho) */
+@media (min-width: 901px) {
+    /* Aquí se pueden agregar estilos específicos para pantallas grandes */
 }
