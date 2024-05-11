@@ -10,21 +10,31 @@ header {
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo durante 0.3 segundos */
 }
 
-nav ul {
+header:hover {
+    background-color: #555; /* Color de fondo al pasar el cursor sobre el encabezado */
+}
+
+header nav ul {
     list-style: none;
     padding: 0;
 }
 
-nav ul li {
-    display: inline;
+header nav ul li {
+    display: inline-block; /* Cambiado a inline-block para que estén en línea */
     margin-right: 20px;
 }
 
-nav ul li a {
+header nav ul li a {
     color: #fff;
     text-decoration: none;
+    transition: font-size 0.3s ease; /* Transición suave del tamaño de la letra durante 0.3 segundos */
+}
+
+header nav ul li a:hover {
+    font-size: 1.2em; /* Aumentar el tamaño de la letra al pasar el cursor sobre el enlace */
 }
 
 section {
