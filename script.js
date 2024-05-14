@@ -17,5 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
         // Envío del formulario (simulado)
         alert("¡Formulario enviado correctamente!");
         form.reset(); // Limpiar el formulario después del envío
+        // Prueba GEO
     });
 });
