@@ -1,0 +1,103 @@
+/* Estilos generales */
+body {
+    
+    background-image: url('ImgSRC\PaisajeLunar.jpg');
+    background-size: cover; /* Para que la imagen de fondo cubra todo el cuerpo */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
+   
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo durante 0.3 segundos */
+}
+
+header:hover {
+    background-color: #555; /* Color de fondo al pasar el cursor sobre el encabezado */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block; /* Cambiado a inline-block para que estén en línea */
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: font-size 0.3s ease; /* Transición suave del tamaño de la letra durante 0.3 segundos */
+}
+
+header nav ul li a:hover {
+    font-size: 1.2em; /* Aumentar el tamaño de la letra al pasar el cursor sobre el enlace */
+}
+
+section {
+    padding: 20px;
+}
+
+/* Estilos específicos para el formulario de contacto */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo durante 0.3 segundos */
+}
+
+button:hover {
+    background-color: #555; /* Color de fondo al pasar el cursor sobre el botón */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Media queries para hacer la página responsive */
+
+/* Estilos para pantallas pequeñas (hasta 600px de ancho) */
+@media (max-width: 600px) {
+    /* Aquí se pueden agregar estilos específicos para pantallas pequeñas */
+}
+
+/* Estilos para pantallas medianas (de 601px a 900px de ancho) */
+@media (min-width: 601px) and (max-width: 900px) {
+    /* Aquí se pueden agregar estilos específicos para pantallas medianas */
+}
+
+/* Estilos para pantallas grandes (más de 900px de ancho) */
+@media (min-width: 901px) {
+    /* Aquí se pueden agregar estilos específicos para pantallas grandes */
+}
