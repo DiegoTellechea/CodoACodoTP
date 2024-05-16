@@ -13,6 +13,8 @@ header {
     transition: background-color 0.3s ease; /* Transición suave del color de fondo durante 0.3 segundos */
 }
 
+
+
 header:hover {
     background-color: #555; /* Color de fondo al pasar el cursor sobre el encabezado */
 }
@@ -39,6 +41,38 @@ header nav ul li a:hover {
 
 section {
     padding: 20px;
+}
+
+/* Estilos específicos para el formulario de contacto */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Estilos específicos para el portafolio */
+.producto {
+    display: inline-block;
+    width: 200px; /* Ajustar según sea necesario */
+    margin: 20px;
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.producto img:hover {
+    transform: scale(1.05); /* Agrandar ligeramente la imagen al pasar el cursor */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumentar la sombra al pasar el cursor */
+}
+
+.producto h3, .producto p {
+    margin: 10px 0;
 }
 
 /* Estilos específicos para el formulario de contacto */
@@ -95,3 +129,4 @@ footer {
 @media (min-width: 901px) {
     /* Aquí se pueden agregar estilos específicos para pantallas grandes */
 }
+
