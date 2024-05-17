@@ -7,16 +7,19 @@ body {
 }
 
 header {
-    background-color: #86c3cf;
+    background-color: #80afc2;     
     color: #e1ee99;
     padding: 20px 0;
     text-align: center;
+    position: fixed;
     transition: background-color 0.3s ease; /* Transición suave del color de fondo durante 0.3 segundos */
-    height: 110px;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Asegurar que el header esté por encima de otros elementos */
 }
 
 header:hover {
-    background-color: #80afc2; /* Color de fondo al pasar el cursor sobre el encabezado */
+    background-color: #86c3cf; /* Color de fondo al pasar el cursor sobre el encabezado */
 }
 
 header nav ul {
@@ -40,22 +43,42 @@ header nav ul li a:hover {
     font-size: 1.2em; /* Aumentar el tamaño de la letra al pasar el cursor sobre el enlace */
 }
 
+header .remax {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em; /* Ajusta el tamaño según sea necesario */
+}
+
+header .moon {
+    font-family: Arial, sans-serif;
+    font-size: 2em; /* Asegura que ambos textos tengan el mismo tamaño */
+}
+
 section {
     padding: 20px;
     text-align: center; /* Alinear el texto al centro */
 }
 
+
+/* Estilo para el contenedor de texto compacto */
+.compact-text {
+    max-width: 800px; /* Ajusta este valor según sea necesario */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Restablecer estilos de lista para la sección de servicios */
 #servicios ul {
-    list-style: none; /* Eliminar los puntos de la lista */
+    list-style-type: none;
     padding: 0;
 }
 
-#servicios ul li {
-    text-align: center; 
-    margin: 5px 0; 
-    display: block; 
+#servicios li {
+    margin-bottom: 40px;
 }
 
+#servicios p {
+    margin: 10px 0;
+}
 
 /* Estilos específicos para el portafolio */
 
@@ -66,12 +89,15 @@ section {
 .portafolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1px;
+    gap: 20px;
     justify-content: center; /* Centrar los elementos dentro del grid */
+    z-index: 1; /* Asegurar que las imágenes estén debajo del header */
 }
 
 .producto {
     text-align: center;
+    position: relative;
+    z-index: 0; /* Asegurar que el contenedor del producto esté debajo del header */
 }
 
 .producto img {
@@ -85,12 +111,23 @@ section {
 }
 
 .producto img:hover {
-    transform: scale(1.40); /* Agrandar ligeramente la imagen al pasar el cursor */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumentar la sombra al pasar el cursor */
+    transform: scale(1.4);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 2;
 }
 
-.producto h3, .producto p {
-    margin: 10px 0;
+.texto-producto {
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+.producto img:hover + h3,
+.producto img:hover + p {
+    transform: translateY(20px); /* Desplazar el texto hacia abajo */
+}
+
+.producto img:hover + .texto-producto {
+    transform: translateY(20px);
 }
 
 /* Estilos para la sección de vendedores */
