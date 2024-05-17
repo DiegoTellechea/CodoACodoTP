@@ -24,17 +24,18 @@
         <p>Tu terreno en la Luna!!.</p>
     </section>
 
-    <section id="servicios">
-        <h2>Servicios</h2>
-        <ul>
-            <li>Venta de terrenos fiscales en Mare Serenitatis</li>
-            <li>Asesoramiento personalizado</li>
-            <li>Escrituracion con la NASA</li>
-        </ul>
-    </section>
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <ul>
+                <li>Venta de terrenos fiscales en Mare Serenitatis</li>
+                <li>Asesoramiento personalizado</li>
+                <li>Escrituracion con la NASA</li>
+            </ul>
+        </section>
 
     <section id="portafolio">
         <h2>Portafolio</h2>
+        <div class="portafolio-grid">
         <div class="producto">
             <img src="ImgSRC\PaisajeLunar.png" alt="ImgSRC\PaisajeLunar.png">
             <h3>Mare Frigoris</h3>
@@ -47,30 +48,53 @@
         </div>
         <div class="producto">
             <img src="ImgSRC\Moon_names.jpg" alt="ImgSRC\Moon_names.jpg">
-            <h3>Mare Crisium</h3>
+            <h3>Mare Imbrium</h3>
             <p>Precio: $120.000</p>
         </div>
         <div class="producto">
-            <img src="ImgSRC\SueloLunar.png" alt="ImgSRC\SueloLunar.png">
-            <h3>Mare Crisium</h3>
+            <img src="ImgSRC\casaluna1.jpg" alt="ImgSRC\casaluna1.jpg">
+            <h3>Mare Nectaris</h3>
             <p>Precio: $120.000</p>
         </div>
     </section>
+
+    <section id="vendedores">
+    <h2>Nuestros Vendedores</h2>
+    <div class="vendedores-grid">
+        <!-- Aquí puedes colocar el contenido de tus vendedores -->
+        <div class="vendedor">
+            <img src="ImgSRC\Buzz_Aldrin_(S69-31743).jpg" alt="ImgSRC\Buzz_Aldrin_(S69-31743).jpg">
+            <h3>Robert Galan</h3>
+            <p>Descripción o información adicional sobre el vendedor.</p>
+        </div>
+        <div class="vendedor">
+            <img src="ImgSRC\astronauta.jpg" alt="ImgSRC\astronauta.jpg">
+            <h3>Littlegrass Gonzalez</h3>
+            <p>Descripción o información adicional sobre el vendedor.</p>
+        </div>
+        <div class="vendedor">
+            <img src="ImgSRC\NeilArmstrong.jpg" alt="ImgSRC\NeilArmstrong.jpg">
+            <h3>Robert Petruzza</h3>
+            <p>Descripción o información adicional sobre el vendedor.</p>
+        </div>
+        <!-- Agrega más divs de vendedor según sea necesario -->
+    </div>
+</section>
 
     <section id="contacto">
         <h2>Contacto</h2>
         <form id="contactoForm">
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+            <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre ">
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required placeholder="Ingresa tu email">
             <label for="consulta">Consulta:</label>
             <textarea id="consulta" name="consulta" required></textarea>
             <label for="motivo">Motivo de consulta:</label>
             <select id="motivo" name="motivo" required>
                 <option value="Consulta general">Consulta general</option>
-                <option value="Compra de producto">Compra de producto</option>
-                <option value="Reclamo">Reclamo</option>
+                <option value="Compra de terreno">Compra de terreno</option>
+                <option value="Financiamiento">Financiamiento</option>
             </select>
             <label>
                 <input type="checkbox" name="suscripcion"> Suscribirse a nuestro boletín
@@ -79,9 +103,12 @@
         </form>
     </section>
 
+ 
+
     <footer>
         <p>&copy; 2024 ReMax Moon</p>
     </footer>
+   
 
     <script src="script.js"></script>
 </body>
