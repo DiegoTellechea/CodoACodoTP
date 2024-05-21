@@ -2,7 +2,8 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center; /* Alinear todo el texto al centro */
+    text-align: center;}*/ 
+    /* Alinear todo el texto al centro */
 
 
 body {
@@ -64,7 +65,7 @@ header .moon {
    display: grid;
 }
 .col-md-6 {
-  display:-ms-inline-grid;
+  display:grid;
 
 }
 .imagen {
