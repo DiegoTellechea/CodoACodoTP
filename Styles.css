@@ -58,18 +58,24 @@ header .moon {
     font-family: Arial, sans-serif;
     font-size: 2em; /* Asegura que ambos textos tengan el mismo tamaño */
 }
-.grid-container {
-    width: 100vw;
-    display: grid;
+
+
+.row {
+   display: grid;
+}
+.col-md-6 {
+  display:-ms-inline-grid;
+
 }
 .imagen {
-    width: 50vw;
-    display: grid;
+    width:50vw;
+    
 }
-.Descripcion{
-    width: 50vw;
-    display: grid;
+.descripcion {
     background-color: black;
+    width: 50vw;
+color:#fff;
+
 }
 
 
