@@ -1,21 +1,28 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center; /* Alinear todo el texto al centro */
-    background-color: #e5e5b1;
+    text-align: center;}*/ 
+    /* Alinear todo el texto al centro */
+
+
+body {
+    font-family: Arial, sans-serif;
+    color:white;
+    margin:0;
+    background-image:url(./ImgSRC/fondo_2.jpg);
 }
 
 header {
-    background-color: #80afc2;     
-    color: #e1ee99;
+    background-color:black;
+    color:white;
     padding: 20px 0;
     text-align: center;
-    position: fixed;
+    position:sticky;
     transition: background-color 0.3s ease; /* Transición suave del color de fondo durante 0.3 segundos */
     width: 100%;
     top: 0;
-    z-index: 1000; /* Asegurar que el header esté por encima de otros elementos */
+    z-index:1000; /* Asegurar que el header esté por encima de otros elementos */
 }
 
 header:hover {
@@ -52,6 +59,27 @@ header .moon {
     font-family: Arial, sans-serif;
     font-size: 2em; /* Asegura que ambos textos tengan el mismo tamaño */
 }
+
+
+.row {
+   display: grid;
+}
+.col-md-6 {
+  display:grid;
+
+}
+.imagen {
+    width:50vw;
+    
+}
+.descripcion {
+    background-color: black;
+    width: 50vw;
+color:#fff;
+
+}
+
+
 
 section {
     padding: 20px;
@@ -167,7 +195,7 @@ section {
 
 /* Estilos específicos para el formulario de contacto */
 #contacto {
-    background-color: #e5e5b1;
+    background-color: #020202;
     padding: none;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
