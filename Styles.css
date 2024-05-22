@@ -73,10 +73,10 @@ header .moon {
     
 }
 .descripcion {
-    background-color: black;
-    width: 50vw;
-color:#fff;
-
+    /* no es necesario forzar el tamaño de la descripción */
+    /* background-color: black;
+    width: 50vw; */
+    color:#fff;
 }
 
 
@@ -190,6 +190,28 @@ section {
 .vendedor p {
     font-style: italic;
     color: #555;
+}
+
+
+/* carousel */
+.carousel-item.active, .carousel-item-start{
+    /* sobrescribe el estilo de bootstrap */
+    display: grid !important;
+}
+
+/* las clases *-item-start y *-item-next las usa bootstrap para la transición */
+.grid-2c.active,
+.grid-2c.carousel-item.active,
+.grid-2c.carousel-item-start,
+.grid-2c.carousel-item-next{
+    /* los centro. cambiar si es necesario */
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.imagen-column {
+    width: 100%;
 }
 
 
