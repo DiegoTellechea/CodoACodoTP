@@ -116,7 +116,7 @@ section {
 
 .portafolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual ancho */
     gap: 20px;
     justify-content: center; /* Centrar los elementos dentro del grid */
     z-index: 1; /* Asegurar que las imágenes estén debajo del header */
@@ -126,6 +126,8 @@ section {
     text-align: center;
     position: relative;
     z-index: 0; /* Asegurar que el contenedor del producto esté debajo del header */
+    overflow: hidden; /* Ocultar cualquier contenido que se salga del contenedor */
+    padding-bottom: 20px; /* Añadir un poco de espacio extra debajo del producto */
 }
 
 .producto img {
@@ -139,24 +141,27 @@ section {
 }
 
 .producto img:hover {
-    transform: scale(1.4);
+    transform: scale(1.2); /* Reducir el escalado para evitar solapamientos */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     z-index: 2;
 }
 
 .texto-producto {
+    margin-top: 10px; /* Añadir margen superior para separar el texto de la imagen */
     transition: transform 0.3s ease;
     position: relative;
     z-index: 1;
-}
-.producto img:hover + h3,
-.producto img:hover + p {
-    transform: translateY(20px); /* Desplazar el texto hacia abajo */
+    background-color: transparent; /* Hacer el fondo transparente */
+    padding: 10px;
+    border-radius: 5px;
+    color: white; /* Cambiar el color del texto a blanco */
 }
 
 .producto img:hover + .texto-producto {
-    transform: translateY(20px);
+    transform: translateY(20px); /* Desplazar el texto hacia abajo */
 }
+
+
 
 /* Estilos para la sección de vendedores */
 
@@ -190,6 +195,28 @@ section {
 .vendedor p {
     font-style: italic;
     color: #555;
+}
+.vendedor {
+    position: relative;
+    display: inline-block; /* Para que el contenedor se ajuste al tamaño de la imagen */
+}
+
+.texto-flotante {
+    position: absolute;
+    top: 50%; /* Ajusta según sea necesario */
+    left: 50%; /* Ajusta según sea necesario */
+    transform: translate(-50%, -50%); /* Centra el texto horizontal y verticalmente */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px; /* Ajusta según sea necesario */
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s ease; /* Transición suave de la opacidad */
+}
+
+.vendedor:hover .texto-flotante {
+    opacity: 1; /* Mostrar el texto al pasar el cursor sobre el vendedor */
 }
 
 
