@@ -6,11 +6,16 @@
     /* Alinear todo el texto al centro */
 
 
-body {
+/* body {
     font-family: Arial, sans-serif;
     color:white;
     margin:0;
     background-image:url(./ImgSRC/fondo_2.jpg);
+} */
+
+body {
+    background-color: black;
+    color: #fff;
 }
 
 header {
@@ -26,7 +31,7 @@ header {
 }
 
 header:hover {
-    background-color: #86c3cf; /* Color de fondo al pasar el cursor sobre el encabezado */
+    background-color: #3e3a3a; /* Color de fondo al pasar el cursor sobre el encabezado */
 }
 
 header nav ul {
