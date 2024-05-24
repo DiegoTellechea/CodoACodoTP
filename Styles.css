@@ -248,6 +248,10 @@ section {
 }
 
 
+#inicio p {
+    margin-bottom: 90px; /* Ajusta el valor según sea necesario */
+}
+
 /* Estilos específicos para el formulario de contacto */
 #contacto {
     /*background-color: #020202;*/
@@ -302,7 +306,9 @@ section {
     background-color: #555; /* Color de fondo al pasar el cursor sobre el botón */
 }
 
-
+#inicio p {
+    margin-bottom: 40px; /* Ajusta el valor según sea necesario */
+}
 
 footer {
    /* background-color: #333;*/
@@ -311,6 +317,8 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+
 
 
 
