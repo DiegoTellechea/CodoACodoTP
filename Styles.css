@@ -1,106 +1,97 @@
-/* body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;}*/ 
-    /* Alinear todo el texto al centro */
-
-
-/* body {
-    font-family: Arial, sans-serif;
-    color:white;
-    margin:0;
-    background-image:url(./ImgSRC/fondo_2.jpg);
-} */
-
 body {
     background-color: black;
     color: #fff;
 }
 
 header {
-    /*background-color:black;*/
-    background-color:#2c2828;
-    color:white;
+    background-color: #2c2828;
+    color: white;
     padding: 20px 0;
     text-align: center;
-    position:sticky;
-    transition: background-color 0.3s ease; /* Transición suave del color de fondo durante 0.3 segundos */
+    position: sticky;
+    transition: background-color 0.3s ease;
     width: 100%;
     top: 0;
-    z-index:1000; /* Asegurar que el header esté por encima de otros elementos */
+    z-index: 1000;
 }
 
 header:hover {
-    background-color: #3e3a3a; /* Color de fondo al pasar el cursor sobre el encabezado */
+    background-color: #3e3a3a;
 }
 
 header nav ul {
     list-style: none;
     padding: 0;
-    display: flex; /* Usar flexbox para alinear los elementos en línea */
-    justify-content: center; /* Centrar los elementos */
+    display: flex;
+    justify-content: center;
 }
 
 header nav ul li {
-    margin: 0 10px; /* Espaciado entre los elementos del menú */
+    margin: 0 10px;
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    transition: font-size 0.3s ease; /* Transición suave del tamaño de la letra durante 0.3 segundos */
+    transition: font-size 0.3s ease;
 }
 
 header nav ul li a:hover {
-    font-size: 1.2em; /* Aumentar el tamaño de la letra al pasar el cursor sobre el enlace */
+    font-size: 1.2em;
 }
 
-header .remax {
-    font-family: 'Dancing Script', cursive;
-    font-size: 2em; /* Ajusta el tamaño según sea necesario */
+.header-title {
+    font-size: 5em; /* Aumenta el tamaño de la fuente */
+    text-align: center;
 }
 
-header .moon {
-    font-family: Arial, sans-serif;
-    font-size: 2em; /* Asegura que ambos textos tengan el mismo tamaño */
+.re-color {
+    color: blue;
+    font-size: 5em; /* Aumenta el tamaño de la fuente de 'Re' */
 }
 
+.max-color {
+    color: red;
+    font-size: 5em; /* Aumenta el tamaño de la fuente de 'Max' */
+}
+
+.separator {
+    color: white;
+    margin: 0 10px;
+    font-size: 5em; /* Aumenta el tamaño de la fuente del separador */
+}
+
+.moon {
+    font-size: 5em; /* Ajusta el tamaño de la fuente de 'MOON' */
+}
 
 .row {
-   display: grid;
+    display: grid;
 }
+
 .col-md-6 {
-  display:grid;
-
+    display: grid;
 }
+
 .imagen {
-    width:50vw;
-    
+    width: 50vw;
 }
+
 .descripcion {
-    /* no es necesario forzar el tamaño de la descripción */
-    /* background-color: black;
-    width: 50vw; */
-    color:#fff;
+    color: #fff;
 }
-
-
 
 section {
     padding: 20px;
-    text-align: center; /* Alinear el texto al centro */
+    text-align: center;
 }
 
-
-/* Estilo para el contenedor de texto compacto */
 .compact-text {
-    max-width: 800px; /* Ajusta este valor según sea necesario */
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Restablecer estilos de lista para la sección de servicios */
 #servicios ul {
     list-style-type: none;
     padding: 0;
@@ -114,65 +105,59 @@ section {
     margin: 10px 0;
 }
 
-/* Estilos específicos para el portafolio */
-
 #portafolio h2 {
-    margin-bottom: 80px; /* Añadir margen inferior para separar el título de las imágenes */
+    margin-bottom: 80px;
 }
 
 .portafolio-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual ancho */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    justify-content: center; /* Centrar los elementos dentro del grid */
-    z-index: 1; /* Asegurar que las imágenes estén debajo del header */
+    justify-content: center;
+    z-index: 1;
 }
 
 .producto {
     text-align: center;
     position: relative;
-    z-index: 0; /* Asegurar que el contenedor del producto esté debajo del header */
-    overflow: hidden; /* Ocultar cualquier contenido que se salga del contenedor */
-    padding-bottom: 20px; /* Añadir un poco de espacio extra debajo del producto */
+    z-index: 0;
+    overflow: hidden;
+    padding-bottom: 20px;
 }
 
 .producto img {
     width: 100%;
-    max-width: 200px; /* Limitar el ancho máximo */
-    height: 150px; /* Altura fija para todas las imágenes */
-    object-fit: cover; /* Recorta la imagen para que se ajuste al contenedor */
+    max-width: 200px;
+    height: 150px;
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .producto img:hover {
-    transform: scale(1.2); /* Reducir el escalado para evitar solapamientos */
+    transform: scale(1.2);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     z-index: 2;
 }
 
 .texto-producto {
-    margin-top: 10px; /* Añadir margen superior para separar el texto de la imagen */
+    margin-top: 10px;
     transition: transform 0.3s ease;
     position: relative;
     z-index: 1;
-    background-color: transparent; /* Hacer el fondo transparente */
+    background-color: transparent;
     padding: 10px;
     border-radius: 5px;
-    color: white; /* Cambiar el color del texto a blanco */
+    color: white;
 }
 
 .producto img:hover + .texto-producto {
-    transform: translateY(20px); /* Desplazar el texto hacia abajo */
+    transform: translateY(20px);
 }
 
-
-
-/* Estilos para la sección de vendedores */
-
 #vendedores h2 {
-    margin-bottom: 80px; /* Añadir margen inferior para separar el título de las imágenes */
+    margin-bottom: 80px;
 }
 
 #vendedores {
@@ -202,42 +187,38 @@ section {
     font-style: italic;
     color: #555;
 }
+
 .vendedor {
     position: relative;
-    display: inline-block; /* Para que el contenedor se ajuste al tamaño de la imagen */
+    display: inline-block;
 }
 
 .texto-flotante {
     position: absolute;
-    top: 50%; /* Ajusta según sea necesario */
-    left: 50%; /* Ajusta según sea necesario */
-    transform: translate(-50%, -50%); /* Centra el texto horizontal y verticalmente */
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 10px;
     border-radius: 5px;
-    font-size: 16px; /* Ajusta según sea necesario */
-    opacity: 0; /* Inicialmente oculto */
-    transition: opacity 0.3s ease; /* Transición suave de la opacidad */
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .vendedor:hover .texto-flotante {
-    opacity: 1; /* Mostrar el texto al pasar el cursor sobre el vendedor */
+    opacity: 1;
 }
 
-
-/* carousel */
-.carousel-item.active, .carousel-item-start{
-    /* sobrescribe el estilo de bootstrap */
+.carousel-item.active, .carousel-item-start {
     display: grid !important;
 }
 
-/* las clases *-item-start y *-item-next las usa bootstrap para la transición */
 .grid-2c.active,
 .grid-2c.carousel-item.active,
 .grid-2c.carousel-item-start,
-.grid-2c.carousel-item-next{
-    /* los centro. cambiar si es necesario */
+.grid-2c.carousel-item-next {
     justify-items: center;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
@@ -247,25 +228,21 @@ section {
     width: 100%;
 }
 
-
 #inicio p {
-    margin-bottom: 90px; /* Ajusta el valor según sea necesario */
+    margin-bottom: 90px;
 }
 
-/* Estilos específicos para el formulario de contacto */
 #contacto {
-    /*background-color: #020202;*/
-    /*background-color: #c7781d;*/
     background-color: #731c1c;
     padding: none;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px; /* Ancho máximo del formulario */
-    margin: 0 auto; /* Centrar el formulario */
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 #contactoForm {
-    text-align: left; /* Alinear el texto del formulario a la izquierda */
+    text-align: left;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -281,7 +258,7 @@ section {
 #contactoForm textarea,
 #contactoForm select {
     width: 100%;
-    max-width: 500px; /* Limitar el ancho máximo */
+    max-width: 500px;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -292,53 +269,42 @@ section {
     background-color: #333;
     color: #fff;
     width: 100%;
-    max-width: 500px; /* Limitar el ancho máximo */
+    max-width: 500px;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Transición suave del color de fondo durante 0.3 segundos */
-
+    transition: background-color 0.3s ease;
     font-size: 30px;
 }
 
 #contactoForm button:hover {
-    background-color: #555; /* Color de fondo al pasar el cursor sobre el botón */
+    background-color: #555;
 }
 
 #inicio p {
-    margin-bottom: 40px; /* Ajusta el valor según sea necesario */
+    margin-bottom: 40px;
 }
 
 footer {
-   /* background-color: #333;*/
-   background-color:#2c2828;
+    background-color: #2c2828;
     color: #fff;
     text-align: center;
     padding: 10px 0;
 }
 
-
-
-
-
-/* Media queries para hacer la página responsive */
-
-/* Estilos para pantallas pequeñas (hasta 600px de ancho) */
 @media (max-width: 600px) {
     #contacto {
         padding: 20px;
     }
 }
 
-/* Estilos para pantallas medianas (de 601px a 900px de ancho) */
 @media (min-width: 601px) and (max-width: 900px) {
     #contacto {
         padding: 30px;
     }
 }
 
-/* Estilos para pantallas grandes (más de 900px de ancho) */
 @media (min-width: 901px) {
     #contacto {
         padding: 40px;
