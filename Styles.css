@@ -84,13 +84,30 @@ header .moon {
     width: 50vw; */
     color:#fff;
 }
+.titulo{
+    text-align: center;
+    font-size: 200%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-left: 1rem;
+    padding-right: 8rem;
+}
 
-
+.sub{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    font-size: 110%;
+   padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 8rem;
+}
+    
+  
 
 section {
     padding: 20px;
     text-align: center; /* Alinear el texto al centro */
 }
+
 
 
 /* Estilo para el contenedor de texto compacto */
@@ -242,6 +259,10 @@ section {
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
 }
+.carousel {
+
+}
+
 
 .imagen-column {
     width: 100%;
