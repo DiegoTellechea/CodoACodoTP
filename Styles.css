@@ -87,9 +87,14 @@ section {
 }
 
 .compact-text {
+    border: 4px solid #ded4d4;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+}
+
+#servicios {
+    background-color: #731c1c;
 }
 
 #servicios ul {
@@ -103,6 +108,13 @@ section {
 
 #servicios p {
     margin: 10px 0;
+}
+
+.iframe {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
 }
 
 #portafolio h2 {
