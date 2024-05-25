@@ -50,7 +50,8 @@ document.addEventListener("DOMContentLoaded", function() {
         
         function validarTelefono() {
             const telefono = document.getElementById("telefono").value.trim();
-            const regexTelefono = /^\d{10}$/; // Ejemplo de regex para un teléfono de 10 dígitos
+            const regexTelefono = /^\d{10,15}$/; // Ejemplo de regex para un teléfono de 10 dígitos
+           
             if (regexTelefono.test(telefono)) {
                 return true;
             } else {
@@ -62,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
             Swal.fire({
                 icon: 'error',
                 title: 'Error',
-                text: 'El telefono ingresado no corresponde a Argentina (no inclir cero en código de área)'
+                text: 'El telefono ingresado no corresponde a Argentina'
             });
             return;
         }
@@ -79,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
         Swal.fire({
             icon: 'success',
             title: '¡Éxito!',
-            text: '¡Formulario enviado correctamente!',
+            text: '¡Formulario enviado correctamente! Lo contactaremos a la brevedad',
         });
         form.reset(); // Limpiar el formulario después del envío
         // Prueba GEO
