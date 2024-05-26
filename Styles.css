@@ -103,7 +103,8 @@ header nav ul li a:hover {
 
 section {
     padding: 20px;
-    text-align: center;
+    text-align: center; 
+    scroll-margin-top: 210px;      
 }
 
 /* Estilo para el contenedor de texto compacto */
